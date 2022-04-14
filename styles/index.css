@@ -14,9 +14,19 @@ body{
     justify-content: center;
     align-items: center;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .content{
     display: grid;
-    width: 600px;
+    width: 620px;
     height: 448px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5fr 6fr;
@@ -53,7 +63,7 @@ body{
 
   }
   .secc_two-description{
-      color: var(--white-color);
+    color: var(--Light-Gray);
       font-size: 0.9rem;
   }
   .card-precio{
@@ -80,7 +90,7 @@ body{
 
 }
 .secc_three-description{
-    color: var(--white-color);
+    color: var(--Light-Gray);
     font-size: 0.9rem;
 
 }
@@ -97,17 +107,43 @@ body{
 
 }
 
-  @media (max-width: 800px) {
+  @media (max-width: 650px) {
+    body{
+        align-items: normal;
+
+        margin-top: 30px;
+
+    }
    
     .content{
         width: 300px;
-        height: 900px;
+        height: 435px;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
     }
     .secc_one {
+        padding: 10px 25px;
         grid-column: 1 / 2;
         grid-row: 1/ 2;
       }
 
+      .secc_two{
+        padding: 10px 25px;
+
+        border-radius: 0px 0px 0px 0px;
+
+      }
+
+      .secc_three{
+        padding: 0px 70px 10px 20px;
+        border-radius: 0px 0px 10px 10px;
+
+      }
+      .secc_one-subtitulo{
+        font-size: 0.9rem;
+    }
+    .secc_one-description{
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
   }
