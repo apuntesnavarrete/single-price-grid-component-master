@@ -17,10 +17,11 @@ body{
 .content{
     display: grid;
     width: 600px;
-    height: 400px;
+    height: 448px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5fr 6fr;
     border-radius: 10px;    
+    box-shadow: 1px 1px 10px 1px rgb(186 180 180 / 75%);
 }
 
 .secc_one {
@@ -42,19 +43,57 @@ body{
     color: var(--Grayish-Blue);
     line-height: 1.5;
 }
-
+.content h3{
+    color: var(--white-color);
+}
   .secc_two{
       background-color: var(--Cyan);
       border-radius: 0px 0px 0px 10px;
       padding: 20px 35px;
 
   }
+  .secc_two-description{
+      color: var(--white-color);
+      font-size: 0.9rem;
+  }
+  .card-precio{
+    color: white;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+  .precio_description{
+      font-size: 0.7rem;
+      color: var(--Light-Gray);
+      display: inline-block;
+    position: relative;
+    top: -3px;
+    padding-left: 5px;
+    opacity: 0.8;
+  }
 
   .secc_three{
     background-color: var(--Cyan);
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 0px 0px 10px 0px;
-    padding: 20px 35px;
+    padding: 18px 70px 20px  38px;
+    line-height: 1.4;
+
+}
+.secc_three-description{
+    color: var(--white-color);
+    font-size: 0.9rem;
+
+}
+
+.button_card{
+    margin: 15px 0;
+    width: 95%;
+    height: 40px;
+    background-color: var(--Bright-Yellow);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0px rgb(92 89 89 / 75%);
 
 }
 
